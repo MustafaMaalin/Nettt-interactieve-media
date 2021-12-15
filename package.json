@@ -15,7 +15,9 @@
     "@alpinejs/persist": "^3.6.1",
     "@alpinejs/trap": "^3.6.1",
     "alpinejs": "^3.6.1",
-    "focus-visible": "^5.2.0"
+    "focus-visible": "^5.2.0",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.3.0",
