@@ -7,18 +7,21 @@
 <!-- /page_builder/_tools.antlers.html -->
 
 
-<section class="bg-white pt-7 pb-14">
-
-        <div class="container px-8 mx-auto sm:px-12 lg:px-20">
-
-
-                <div class="img-slider">
+<section class="bg-white pt-7 pb-9">
+        <div class="fluid-container px-8 mx-auto sm:px-12 lg:px-20">
+                <div class="  img-slider">
                     {{ slider-images }}
-                    <img src="{{url}}" alt="{{alt}}" class="block object-contain h-12 mr-10">
+                    <img src="{{url}}" alt="{{alt}}" class="block object-contain h-8 mr-10">
                     {{/slider-images}}
                 </div>
-
-         
         </div>
 </section>
+<style>
+    .slick-prev:before {
+        color: black;
+    }
+    .slick-next:before {
+        color: black;
+    }
+</style>
 <!-- End: /page_builder/_tools.antlers.html -->

@@ -456,7 +456,7 @@ button,
  * as it triggers the better focus styles even for links, which still use a dotted
  * outline in Firefox by default.
  */
- 
+
 :-moz-focusring {
 	outline: auto;
 }
@@ -523,14 +523,14 @@ samp {
  *    CSS Remedy, with `svg` added as well.
  *
  *    https://github.com/mozdevs/cssremedy/issues/14
- * 
+ *
  * 2. Add `vertical-align: middle` to align replaced elements more
  *    sensibly by default when overriding `display` by adding a
  *    utility like `inline`.
  *
  *    This can trigger a poorly considered linting error in some
  *    tools but is included by design.
- * 
+ *
  *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
  */
 
@@ -1350,6 +1350,9 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 	.outer-grid > *:last-child.w-full {
 		margin-bottom: -6rem;
 	}
+        .fluid-container {
+            max-width: 1640px !important;
+        }
 }
 .fixed {
 	position: fixed;
@@ -1412,9 +1415,6 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 }
 .col-span-12 {
 	grid-column: span 12 / span 12;
-}
-.col-span-6 {
-	grid-column: span 6 / span 6;
 }
 .-m-1 {
 	margin: -0.25rem;
@@ -1492,11 +1492,20 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 .mb-8 {
 	margin-bottom: 2rem;
 }
+.mb-5 {
+	margin-bottom: 1.25rem;
+}
 .mr-10 {
 	margin-right: 2.5rem;
 }
+.box-border {
+	box-sizing: border-box;
+}
 .block {
 	display: block;
+}
+.inline-block {
+	display: inline-block;
 }
 .inline {
 	display: inline;
@@ -1537,8 +1546,8 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 .h-2 {
 	height: 0.5rem;
 }
-.h-12 {
-	height: 3rem;
+.h-8 {
+	height: 2rem;
 }
 .h-32 {
 	height: 8rem;
@@ -1579,6 +1588,9 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 .max-w-7xl {
 	max-width: 80rem;
 }
+.max-w-screen-md {
+	max-width: 768px;
+}
 .flex-shrink-0 {
 	flex-shrink: 0;
 }
@@ -1610,9 +1622,6 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 }
 .grid-cols-12 {
 	grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-.grid-cols-4 {
-	grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-col {
 	flex-direction: column;
@@ -1649,9 +1658,6 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 }
 .gap-y-4 {
 	row-gap: 1rem;
-}
-.gap-y-8 {
-	row-gap: 2rem;
 }
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
 	--tw-space-y-reverse: 0;
@@ -1803,6 +1809,10 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 	--tw-bg-opacity: 1;
 	background-color: rgba(231, 0, 130, var(--tw-bg-opacity));
 }
+.bg-greyblue {
+	--tw-bg-opacity: 1;
+	background-color: rgba(74, 85, 104, var(--tw-bg-opacity));
+}
 .bg-gray-100 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(241, 245, 249, var(--tw-bg-opacity));
@@ -1883,6 +1893,10 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }
+.py-5 {
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
 .pr-10 {
 	padding-right: 2.5rem;
 }
@@ -1892,11 +1906,17 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 .pb-12 {
 	padding-bottom: 3rem;
 }
+.pl-8 {
+	padding-left: 2rem;
+}
+.pr-28 {
+	padding-right: 7rem;
+}
 .pt-7 {
 	padding-top: 1.75rem;
 }
-.pb-14 {
-	padding-bottom: 3.5rem;
+.pb-9 {
+	padding-bottom: 2.25rem;
 }
 .text-left {
 	text-align: left;
@@ -1926,6 +1946,18 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 }
 .text-xl {
 	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+.text-5xl {
+	font-size: 3rem;
+	line-height: 1;
+}
+.text-4xl {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+}
+.text-lg {
+	font-size: 1.125rem;
 	line-height: 1.75rem;
 }
 .text-base {
@@ -1974,6 +2006,9 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 .tracking-wide {
 	letter-spacing: 0.025em;
 }
+.tracking-tight {
+	letter-spacing: -0.025em;
+}
 .text-neutral {
 	--tw-text-opacity: 1;
 	color: rgba(30, 41, 59, var(--tw-text-opacity));
@@ -2017,13 +2052,13 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 	--tw-text-opacity: 1;
 	color: rgba(251, 191, 36, var(--tw-text-opacity));
 }
-.text-gray-600 {
-	--tw-text-opacity: 1;
-	color: rgba(71, 85, 105, var(--tw-text-opacity));
-}
 .text-pink {
 	--tw-text-opacity: 1;
 	color: rgba(231, 0, 130, var(--tw-text-opacity));
+}
+.text-gray-600 {
+	--tw-text-opacity: 1;
+	color: rgba(71, 85, 105, var(--tw-text-opacity));
 }
 .underline {
 	text-decoration: underline;
@@ -2242,10 +2277,6 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 }
 @media (min-width: 640px) {
 
-	.sm\:col-span-4 {
-		grid-column: span 4 / span 4;
-	}
-
 	.sm\:px-6 {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
@@ -2351,6 +2382,11 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 		padding-right: 2rem;
 	}
 
+	.md\:text-3xl {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+
 	.md\:text-4xl {
 		font-size: 2.25rem;
 		line-height: 2.5rem;
@@ -2360,6 +2396,24 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 
 	.lg\:col-span-4 {
 		grid-column: span 4 / span 4;
+	}
+
+	.lg\:max-w-screen-sm {
+		max-width: 640px;
+	}
+
+	.lg\:translate-y-20 {
+		--tw-translate-y: 5rem;
+		transform: var(--tw-transform);
+	}
+
+	.lg\:-translate-x-20 {
+		--tw-translate-x: -5rem;
+		transform: var(--tw-transform);
+	}
+
+	.lg\:flex-row {
+		flex-direction: row;
 	}
 
 	.lg\:px-8 {

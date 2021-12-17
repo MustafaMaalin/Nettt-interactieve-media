@@ -6,8 +6,16 @@
 
 @layer components {
 
+    @media (min-width: 1024px) {
+        .fluid-container {
+            max-width: 1640px !important;
+        }
+    }
+
 }
 
 @layer utilities {
+
+
 
 }

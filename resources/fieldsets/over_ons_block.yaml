@@ -1,0 +1,34 @@
+title: 'Over Ons block'
+fields:
+  -
+    handle: image
+    field:
+      mode: list
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: 'Over ons Foto'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      container: assets
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Over ons titel'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: textarea
+    field:
+      antlers: false
+      display: 'Over ons text'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above

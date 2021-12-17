@@ -46,6 +46,18 @@ fields:
           fields:
             -
               import: link_blocks
+        over_ons_block:
+          display: 'Over Ons block'
+          instructions: 'Je kunt hier een afbeelding en text plaatsen die op de website over elkaar liggen'
+          fields:
+            -
+              import: over_ons_block
+        titledescription:
+          display: title/description
+          instructions: 'titel en descriptie'
+          fields:
+            -
+              import: titledescription
         tools:
           display: tools
           instructions: 'slider images'

@@ -16,6 +16,8 @@ mix.options({
     cssNano: { minifyFontValues: false }
 });
 
+
+
 mix.browserSync({
     proxy: process.env.APP_URL,
     files: [

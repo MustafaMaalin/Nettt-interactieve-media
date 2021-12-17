@@ -3,13 +3,18 @@ id: home
 blueprint: page
 title: Home
 updated_by: 4034dfd0-3ed5-441d-b871-2e4dc23329a4
-updated_at: 1639565076
+updated_at: 1639749292
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 page_builder:
+  -
+    titel: 'Onze Diensten'
+    descriptie: 'Als full service internet- en mediabureau is Nettt Interactieve Media hét aangewezen adres voor advies, webdesign, webdevelopment, content management, zoekmachine-optimalisatie en méér.'
+    type: titledescription
+    enabled: true
   -
     slider-images:
       - merken/image_4-removebg-preview-1.png
@@ -98,4 +103,14 @@ page_builder:
     link: 'entry::ced91ad6-f0e4-46e9-b64f-d866bf53c51d'
     type: cta_pink
     enabled: true
+  -
+    img:
+      - nettt-locatie.jpg
+    type: over_ons_block
+    enabled: true
+    title: 'Nettt Interactieve Media'
+    over_ons_text: 'Al het goed komt in drieën: een spreuk die Nettt op het lijf is geschreven.'
+    image:
+      - nettt-locatie.jpg
+    textarea: 'Al het goede komt in drieën: een spreuk die Nettt op het lijf is geschreven!'
 ---
