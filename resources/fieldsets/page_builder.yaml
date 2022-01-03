@@ -22,6 +22,12 @@ fields:
           fields:
             -
               import: call_to_action
+        cases:
+          display: cases
+          instructions: 'voeg je cases toe.'
+          fields:
+            -
+              import: cases
         collection:
           display: Collection
           instructions: 'Show collection entries.'
@@ -52,6 +58,12 @@ fields:
           fields:
             -
               import: over_ons_block
+        team:
+          display: Team
+          instructions: 'Voeg de medewerkers van Nettt toe aan het team block'
+          fields:
+            -
+              import: team
         titledescription:
           display: title/description
           instructions: 'titel en descriptie'

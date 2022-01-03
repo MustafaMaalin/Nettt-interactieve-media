@@ -1,0 +1,46 @@
+title: Team
+fields:
+  -
+    handle: ons-team
+    field:
+      fields:
+        -
+          handle: team-image
+          field:
+            mode: list
+            container: assets
+            restrict: false
+            allow_uploads: true
+            show_filename: true
+            display: team-image
+            type: assets
+            icon: assets
+            listable: hidden
+            instructions_position: above
+        -
+          handle: name
+          field:
+            input_type: text
+            antlers: false
+            display: 'volledige naam'
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+        -
+          handle: rol
+          field:
+            input_type: text
+            antlers: false
+            display: Rol
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+      mode: table
+      reorderable: true
+      display: ons-team
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above

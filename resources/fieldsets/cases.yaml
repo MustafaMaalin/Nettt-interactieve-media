@@ -1,0 +1,35 @@
+title: Cases
+fields:
+  -
+    handle: label
+    field:
+      input_type: text
+      antlers: false
+      display: label
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: case_image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: case-image
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above

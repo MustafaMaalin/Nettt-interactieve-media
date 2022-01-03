@@ -1,0 +1,33 @@
+{{#
+	@name Team
+	@desc The Team page builder block.
+    @set page.page_builder.team
+#}}
+
+<!-- /page_builder/_team.antlers.html -->
+<section>
+    {{ block:team }}
+    <div class=" fluid-container p-4 max-w-5xl grid gap-4 xs:grid-cols-2 xs:p-8 md:grid-cols-4">
+        <h1 class=" text-5xl xs:col-span-2 xs:grid xs:gap-4 xs:grid-cols-2 md:col-span-3 md:text-5x1 md:grid-cols-3">
+            <span class="font-bold md:col-span-2">Ons Team</span>
+            <br>
+            <br>
+            <p class=" text-lg xs:col-start-2 xs:self-center">Ontmoet de mensen die het allemaal mogelijk maken. We zien in elk moment een groot potentieel en geven om wat we welke dag doen.</p>
+        </h1>
+            {{ons-team}}
+        <a class="overlay-container md:h-96 ">
+            {{team-image}}
+            <img class="image" width="386" height="460" src="{{url}}">
+            {{/team-image}}
+            <div class="overlay">
+                <div class="text">{{name}}</div>
+                <div class="text-rol">{{rol}}</div>
+            </div>
+        </a>
+            {{/ons-team}}
+
+    </div>
+    {{ block:team }}
+</section>
+
+<!-- End: /page_builder/_team.antlers.html -->
