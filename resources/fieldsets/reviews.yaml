@@ -1,0 +1,58 @@
+title: reviews
+fields:
+  -
+    handle: klantenreview
+    field:
+      fields:
+        -
+          handle: klant-foto
+          field:
+            mode: list
+            container: assets
+            restrict: false
+            allow_uploads: true
+            show_filename: true
+            display: 'Foto van Klant'
+            type: assets
+            icon: assets
+            listable: hidden
+            instructions_position: above
+        -
+          handle: klant-naam
+          field:
+            input_type: text
+            antlers: false
+            display: 'Klant naam'
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+        -
+          handle: klant-review
+          field:
+            antlers: false
+            display: 'Klant review'
+            type: textarea
+            icon: textarea
+            listable: hidden
+            instructions_position: above
+      mode: table
+      reorderable: true
+      display: klantreview
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above
+  -
+    handle: background-img
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: 'achtergrond layer'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above

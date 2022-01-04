@@ -8,5 +8,9 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 4034dfd0-3ed5-441d-b871-2e4dc23329a4
-updated_at: 1639078254
+updated_at: 1641301613
+page_builder:
+  -
+    type: call_to_action_footer
+    enabled: true
 ---

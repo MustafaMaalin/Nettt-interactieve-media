@@ -28,7 +28,51 @@ fields:
       restrict: false
       allow_uploads: true
       show_filename: true
-      display: case-image
+      display: 'grote img container'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      instructions: 'Deze container is voor de 1ste grote container op de pagina'
+      max_files: 1
+  -
+    handle: case-img-standing
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 1
+      display: 'grote staande container'
+      type: assets
+      icon: assets
+      instructions: 'Deze container is bedoeld voor de image container die staand op de pagina staat.'
+      listable: hidden
+      instructions_position: above
+  -
+    handle: img_small
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: 'image container 1/3'
+      type: assets
+      icon: assets
+      instructions: 'Hier mogen de kleinere foto''s staan'
+      listable: hidden
+      instructions_position: above
+  -
+    handle: img_container2
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: 'container 1/3 #2'
       type: assets
       icon: assets
       listable: hidden

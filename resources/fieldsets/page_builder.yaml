@@ -16,12 +16,24 @@ fields:
           fields:
             -
               import: article
+        background_image:
+          display: background-image
+          instructions: 'Creativiteit,Techniek en service block'
+          fields:
+            -
+              import: background_image
         call_to_action:
           display: Call to action
           instructions: 'Show a call to action.'
           fields:
             -
               import: call_to_action
+        call_to_action_footer:
+          display: 'call to action footer'
+          instructions: 'gebruik deze cta alleen voor de footer'
+          fields:
+            -
+              import: call_to_action_footer
         cases:
           display: cases
           instructions: 'voeg je cases toe.'
@@ -40,6 +52,12 @@ fields:
           fields:
             -
               import: form
+        imgtekst_center:
+          display: 'img/tekst center'
+          instructions: 'hetzelfde als text afbeelding echter zit het afbeelding onder de tekst'
+          fields:
+            -
+              import: imgtekst_center
         link_blocks:
           display: Link blocks
           instructions: 'Show link blocks.'
@@ -53,12 +71,24 @@ fields:
           fields:
             -
               import: over_ons_block
+        reviews:
+          display: reviews
+          instructions: klantenreviews
+          fields:
+            -
+              import: reviews
         team:
           display: Team
           instructions: 'Voeg de medewerkers van Nettt toe aan het team block'
           fields:
             -
               import: team
+        tekst_en_afbeelding:
+          display: 'tekst en afbeelding'
+          instructions: 'Schrijf hier een stukje tekst en plaats een afbeelding als je wilt.'
+          fields:
+            -
+              import: tekst_en_afbeelding
         titledescription:
           display: title/description
           instructions: 'titel en descriptie'

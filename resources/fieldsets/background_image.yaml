@@ -1,0 +1,46 @@
+title: background-image
+fields:
+  -
+    handle: img
+    field:
+      mode: list
+      container: assets
+      folder: background-images
+      restrict: true
+      allow_uploads: true
+      show_filename: true
+      display: 'Background image'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+  -
+    handle: creativiteit
+    field:
+      input_type: text
+      antlers: false
+      display: Creativiteit
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: techniek
+    field:
+      input_type: text
+      antlers: false
+      display: techniek
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: service
+    field:
+      input_type: text
+      antlers: false
+      display: Service
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above

@@ -9,7 +9,7 @@
         "hot": "mix watch --hot",
         "production": "mix --production"
     },
-    "author": "Studio 1902",
+    "author": "Nettt Interactieve Media",
     "license": "MIT",
     "dependencies": {
         "@alpinejs/collapse": "^3.6.1",

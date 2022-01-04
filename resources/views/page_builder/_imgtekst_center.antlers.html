@@ -1,0 +1,32 @@
+{{#
+	@name img/tekst center
+	@desc The img/tekst center page builder block.
+    @set page.page_builder.imgtekst_center
+#}}
+
+<!-- /page_builder/_imgtekst_center.antlers.html -->
+{{block:imgtekst_center}}
+{{image}}
+<section class=" w-full h-full bg-no-repeat bg-cover" style="background-image: url({{url}});">
+    {{/image}}
+    <div class="fluid-container p-12 pb-18">
+        <div class="flex flex-col ">
+            <div>
+                <h1 class="text-4xl font-bold text-greyblue tracking-tight">{{title}}</h1>
+                <p class=" mb-5 mt-5 lg:pr-10 text-lg text-greyblue">{{tekst}}</p>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div>
+                {{image-content}}
+                <img class="lg:pl-5" src="{{url}}">
+                {{/image-content}}
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</section>
+{{block:/imgtekst_center}}
+<!-- End: /page_builder/_imgtekst_center.antlers.html -->

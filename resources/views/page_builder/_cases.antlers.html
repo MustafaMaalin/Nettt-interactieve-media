@@ -1,28 +1,49 @@
-{{#
-	@name cases
-	@desc The cases page builder block.
+    {{#
+    @name cases
+    @desc The cases page builder block.
     @set page.page_builder.cases
-#}}
+    #}}
 
-<!-- /page_builder/_cases.antlers.html -->
-
-<section class="fluid-container"><div>
+    <!-- /page_builder/_cases.antlers.html -->
     {{block:cases}}
-            <div class="box-custom w-auto  m-auto ">
+    <section>
+            <div id="content-grid">
                 {{case_image}}
-                <img class=" w-full h-full object-contain" src="{{url}}">
+            <div class="header bg-cover h-72"
+                style="background-image: url({{url}})">
                 {{/case_image}}
+                <a class="overlay-container md:h-96 ">
+                    <div class="overlay">
+                        <div class="overlay-inner p-4">
+                            <div class="text">{{title}}</div>
+                            <div class="text-rol">{{label}}</div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <br>
-            <div class="flex justify-between flex-wrap md:mb-0">
-                <div class="bg-yellow-700  w-2/5 h-52 mb-4 pr-4 pl-4 md:w-1/3 md:mb-0">Container1</div>
-                <div class="bg-pink w-2/5 h-52 mb-4 pt-2 pr-4 pb-2 pl-4 md:w-2/3 md:row ">Container2</div>
+                {{case-img-standing}}
+            <div class="main bg-cover h-auto"
+                 style="background-image: url({{url}})">
+                {{/case-img-standing}}
             </div>
-            <div class="flex mr-4 mb-4 ml-4  flex-wrap md:mb-0 "></div>
-        </div>
+                {{img_small}}
+            <div class="aside bg-cover h-72"
+                 style="background-image: url({{url}})">
+                {{/img_small}}
+            </div>
+                {{img_container2}}
+            <div class="nav bg-cover h-72"
+                 style="background-image: url({{url}})">
+                {{/img_container2}}
+            </div>
 
-    {{block:cases}}
-</section>
+            </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        {{block:cases}}
+    </section>
 
 
-<!-- End: /page_builder/_cases.antlers.html -->
+    <!-- End: /page_builder/_cases.antlers.html -->

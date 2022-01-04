@@ -1,0 +1,47 @@
+title: 'img/tekst center'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Titel
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: tekst
+    field:
+      antlers: false
+      display: Tekst
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+  -
+    handle: image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: Background
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+  -
+    handle: image-content
+    field:
+      mode: list
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      container: assets

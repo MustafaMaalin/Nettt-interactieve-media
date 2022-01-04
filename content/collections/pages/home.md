@@ -4,11 +4,7 @@ blueprint: page
 title: Home
 <<<<<<< HEAD
 updated_by: 4034dfd0-3ed5-441d-b871-2e4dc23329a4
-updated_at: 1641200085
-=======
-updated_by: 80802917-8d90-4324-9d46-03c0930abb63
-updated_at: 1636186813
->>>>>>> main
+updated_at: 1641303387
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -16,11 +12,18 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 page_builder:
   -
-<<<<<<< HEAD
+    img:
+      - background-images/background-vector-1641208297.svg
+    creativiteit: Creativiteit
+    techniek: Techniek
+    service: Service
+    type: background_image
+    enabled: true
+  -
     titel: 'Onze Diensten'
     descriptie: 'Als full service internet- en mediabureau is Nettt Interactieve Media hét aangewezen adres voor advies, webdesign, webdevelopment, content management, zoekmachine-optimalisatie en méér.'
     type: titledescription
-    enabled: false
+    enabled: true
   -
     slider-images:
       - merken/google.png
@@ -30,38 +33,7 @@ page_builder:
       - merken/computel.png
       - merken/image-10.png
     type: tools
-    enabled: false
-=======
-    article:
-      -
-        type: heading
-        attrs:
-          level: 1
-        content:
-          -
-            type: text
-            text: 'Start out on top'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Peak is your personal bespoke development sherpa. Start every project with this kit full of development goodies. '
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'But beware, this kit ain''t here to be pretty. There are some examples of what Peak can do, but the rest is up to you. '
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Get climbing!'
-    type: article
     enabled: true
->>>>>>> main
   -
     title: Features
     link_blocks:
@@ -111,8 +83,7 @@ page_builder:
         attr_aria: null
         show_controls: false
     type: link_blocks
-<<<<<<< HEAD
-    enabled: false
+    enabled: true
     button-title: 'Ontdek onze werkwijze'
     link: 'entry::ced91ad6-f0e4-46e9-b64f-d866bf53c51d'
     cta_pinkbutton-title: 'Ontdek onze werkwijze'
@@ -123,66 +94,64 @@ page_builder:
     button-title: 'Ontdek onze werkwijze'
     link: 'entry::ced91ad6-f0e4-46e9-b64f-d866bf53c51d'
     type: cta_pink
-    enabled: false
+    enabled: true
+  -
+    titel: 'Uitgelichte cases'
+    type: titledescription
+    enabled: true
+  -
+    label: '#webdev #statamic #uex'
+    title: 'House of U'
+    case_image: 2019_02_27_HOUSEOFU_CAMPAGNE_53975-1614264690-1.jpg
+    type: cases
+    enabled: true
+    case-img-standing: boats2-1641293349.jpg
+    img_small:
+      - house.jpg
+    img_container2:
+      - house.jpg
+  -
+    button-title: 'Meer cases'
+    link: 'entry::1c3868b5-d321-4ff2-a603-a2c0e78c2c0b'
+    type: cta_pink
+    enabled: true
+  -
+    klantenreview:
+      -
+        klant-foto:
+          - klantbeoordeling-foto/John.jpg
+        klant-naam: 'John Doe'
+        klant-review: 'Nettt heeft me geholpen met een spectaculaire website!'
+      -
+        klant-foto:
+          - klantbeoordeling-foto/John.jpg
+        klant-naam: 'John Doe'
+        klant-review: 'Nettt heeft me geholpen met een spectaculaire website!'
+      -
+        klant-foto:
+          - klantbeoordeling-foto/John.jpg
+        klant-naam: 'John Doe'
+        klant-review: 'Nettt heeft me geholpen met een spectaculaire website!'
+      -
+        klant-foto:
+          - klantbeoordeling-foto/John.jpg
+        klant-naam: John
+        klant-review: 'Nettt heeft me geholpen met een spectaculaire website!'
+    background-img:
+      - background-images/background-big-pink.svg
+    type: reviews
+    enabled: true
   -
     img:
       - nettt-locatie.jpg
     type: over_ons_block
-    enabled: false
+    enabled: true
     title: 'Nettt Interactieve Media'
     over_ons_text: 'Al het goed komt in drieën: een spreuk die Nettt op het lijf is geschreven.'
     image:
       - nettt-locatie.jpg
     textarea: 'Al het goede komt in drieën: een spreuk die Nettt op het lijf is geschreven!'
   -
-    label: '#webdev #statamic #uex'
-    title: 'House of U'
-    case_image:
-      - 2019_02_27_HOUSEOFU_CAMPAGNE_53975-1614264690-1.jpg
-    type: cases
-    enabled: false
-  -
-    type: team
+    type: call_to_action_footer
     enabled: true
-    img-team:
-      - nettt-locatie.jpg
-    ons-team:
-      -
-        team-image:
-          - team/Marc-H-1.png
-        name: 'Marc Hensen'
-        rol: 'Directeur en Developer'
-      -
-        team-image:
-          - team/Kevin-1.jpg
-        name: 'Kevin Jansen'
-        rol: Webdeveloper
-      -
-        team-image:
-          - team/Xandor-1.jpg
-        name: 'Xandor Naus'
-        rol: 'UI/uX Controller'
-      -
-        team-image:
-          - team/Mustafa-1.png
-        name: 'Mustafa Maalin'
-        rol: 'Stagiar Front-End-developer'
-      -
-        team-image:
-          - team/Marc-B-1.jpg
-        name: 'Marc Breugelmans'
-        rol: 'Senior Comunnicatieadvseur'
-      -
-        team-image:
-          - team/Doreen-1.jpg
-        name: 'Doreen Verhees'
-        rol: 'Adminastartief Medewerker'
-      -
-        team-image:
-          - team/stage.jpg
-        name: null
-        rol: null
-=======
-    enabled: true
->>>>>>> main
 ---

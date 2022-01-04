@@ -1,0 +1,21 @@
+{{#
+@name background-image
+@desc The background-image page builder block.
+@set page.page_builder.background_image
+#}}
+
+<!-- /page_builder/_background_image.antlers.html -->
+{{block:background_image}}
+    {{img}}
+    <div
+        class="background w-fit  xl:w-full  bg-no-repeat bg-cover"
+        style="background-image: url({{url}})">
+        {{/img}}
+        <div class=" line-h flex flex-col justify-center items-center h-screen text-center ">
+            <a class=" text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold text-pink text-center">{{creativiteit}}</a>
+            <a class=" text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold text-pink text-center">{{techniek}}</a>
+            <a class=" text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold text-pink text-center">{{service}}</a>
+        </div>
+    </div>
+{{block:/background_image}}
+<!-- End: /page_builder/_background_image.antlers.html -->
