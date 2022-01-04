@@ -11,25 +11,21 @@ const plugin = require('tailwindcss/plugin')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  presets: [],
   theme: {
     // Here we define the default colors available. If you want to include
     // all default Tailwind colors you should extend the colors instead.
     colors: {
-      transparent: 'transparent',
       black:   '#000',
       white:  '#fff',
-      pink: '#E70082',
-      greyblue:  '#4A5568',
-      blue: '#08B0F1',
-      grey: '#C4C4C4',
       // Neutrals: neutral colors, with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
       neutral: {
-        DEFAULT: colors.blueGray['800'],
-        ...colors.blueGray
+        DEFAULT: colors.slate['800'],
+        ...colors.slate
       },
       // Primary: primary brand color with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
       primary: {
-        DEFAULT: '#E70082'
+        DEFAULT: '#FF0274'
       },
     },
     extend: {
@@ -93,29 +89,12 @@ module.exports = {
             fontFamily: theme('fontFamily.sans'),
             // fontFamily: theme('fontFamily.serif'),
         },
-        // Style fyle upload form elements.
-        'input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-upload-button': {
-            paddingTop: theme('spacing.2'),
-            paddingBottom: theme('spacing.2'),
-            paddingRight: theme('spacing.4'),
-            paddingLeft: theme('spacing.4'),
-            borderWidth: '2px',
-            borderStyle: 'solid',
-            borderColor: theme('colors.primary.DEFAULT'),
-            backgroundColor: theme('colors.white'),
-            color: theme('colors.primary.DEFAULT'),
-            fontSize: theme('fontSize.xs'),
-            textTransform: 'uppercase',
-            letterSpacing: theme('letterSpacing.widest'),
-            fontWeight: theme('fontWeight.bold'),
-        }
       })
     }),
 
     // Custom components for this particular site.
     plugin(function({ addComponents, theme }) {
       const components = {
-
       }
       addComponents(components)
     }),

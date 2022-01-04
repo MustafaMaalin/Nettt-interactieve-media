@@ -5,12 +5,19 @@
 #}}
 
 <!-- /page_builder/_link_blocks.antlers.html -->
-
-<section class="fluid-container grid md:grid-cols-12 gap-8 ">
-
+<section class="fluid-container grid md:grid-cols-12 gap-8">
+    {{ if block:title }}
+        <div class="md:col-start-3 md:col-span-8 text-center">
+            {{ partial:typography/h2 :content="block:title" }}
+        </div>
+    {{ /if }}
     {{ block:link_blocks }}
         <a
+<<<<<<< HEAD
             class="flex flex-col justify-between items-start bg-white shadow-xl rounded-lg p-6 no-underline focus:outline-none focus-visible:ring-2 ring-primary
+=======
+            class="flex flex-col justify-between items-start bg-white shadow-xl rounded p-6 no-underline focus:outline-none focus-visible:ring-2 ring-primary
+>>>>>>> main
             {{ if total_results == 1 }}
                 md:col-span-8 md:col-start-3
             {{ elseif total_results == 2 }}
@@ -20,32 +27,18 @@
             {{ /if }}"
             aria-labelledby="{{ title | slugify }}"
             draggable="false"
-
+            {{ partial:snippets/button_attributes }}
         >
             <div class="mb-4">
                 <span id="{{ title | slugify }}">
-                    <h1 class="text-sm font-bold leading-tight text-pink mb-4 ">{{title}}</h1>
+                    {{ partial:typography/h2 class="mb-2" :content="title" }}
                 </span>
                 {{ if text }}
-                    {{ partial:typography/h3 class="mb-4" :content="text" }}
+                    {{ partial:typography/paragraph class="mb-4" :content="text" }}
                 {{ /if }}
-                {{ if text-bulletpoint}}
-                    {{ partial:typography/paragraph class="mb-4" :value="text-bulletpoint" }}
-                {{ /if }}
-
-                <ul class="mb-4">
-                    {{text-bulletpoint}}
-                    <li>
-                        {{value}}
-                    </li>
-                    {{/text-bulletpoint}}
-                </ul>
-
             </div>
+            {{ partial:components/button as="span" faux="true" }}
         </a>
-
     {{ /block:link_blocks }}
-
 </section>
-
 <!-- End: /page_builder/_link_blocks.antlers.html -->

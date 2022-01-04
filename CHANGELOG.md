@@ -1,5 +1,21 @@
 # Release Notes
 
+## v3.44.0 (2021-12-21)
+
+### What's improved
+- Improve footer layout on desktop and transition the social icon color on hover. a1a1d368 by @robdekort
+- Update AlpineJS. 4db54ad3 by @robdekort
+
+## v3.43.1 (2021-12-17)
+
+### What's improved
+- Move the init of the Tailwind forms and aspect plugin back to `tailwind.config.peak.js`. 1c4df41e by @robdekort
+
+## v3.43.0 (2021-12-13)
+
+### What's new
+- TailwindCSS v3 support. #183 by @robdekort
+
 ## v3.42.0 (2021-11-30)
 
 ### What's new

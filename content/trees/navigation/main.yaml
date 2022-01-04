@@ -1,17 +1,10 @@
 tree:
   -
-    id: fb42f783-1ee4-4786-b1d9-fb681be1f23d
-    entry: ced91ad6-f0e4-46e9-b64f-d866bf53c51d
+    entry: home
   -
-    id: 801c1c9f-f38f-4980-ad9b-de6c23648db3
-    entry: 1c3868b5-d321-4ff2-a603-a2c0e78c2c0b
-  -
-    id: dd1b179f-fd6c-4512-b022-f860bb45522a
-    entry: e3798c5a-ffaa-4e94-9829-0a9238c6023b
-  -
-    id: d9db1b7b-5616-4bcd-82ae-24c74fb19b36
-    entry: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
-  -
-    id: 441b8bf6-9ed2-4dbf-9ee0-befc80dea299
-    title: '0475-35 89 05'
-    url: 'tel:0475-35 89 95'
+    entry: 6b995156-142b-43d6-be4e-6c260ea90d37
+    children:
+      -
+        entry: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
+      -
+        entry: 20f6a148-63b8-47a8-9b0e-d57095d78c21
