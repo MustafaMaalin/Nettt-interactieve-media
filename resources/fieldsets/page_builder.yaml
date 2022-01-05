@@ -64,7 +64,7 @@ fields:
           fields:
             -
               import: link_blocks
-<<<<<<< HEAD
+
         over_ons_block:
           display: 'Over Ons block'
           instructions: 'Je kunt hier een afbeelding en text plaatsen die op de website over elkaar liggen'
@@ -101,5 +101,4 @@ fields:
           fields:
             -
               import: tools
-=======
->>>>>>> main
+

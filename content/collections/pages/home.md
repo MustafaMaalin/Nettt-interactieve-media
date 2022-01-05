@@ -2,9 +2,8 @@
 id: home
 blueprint: page
 title: Home
-<<<<<<< HEAD
 updated_by: 4034dfd0-3ed5-441d-b871-2e4dc23329a4
-updated_at: 1641303387
+updated_at: 1641369447
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -35,11 +34,11 @@ page_builder:
     type: tools
     enabled: true
   -
-    title: Features
+    title: WEBDEVELOPMENT
     link_blocks:
       -
-        title: 'Check out a form'
-        text: 'Peak renders forms and mail templates dynamically so you can add as many forms as you''d like, just by creating them in the CP. Peak ships with a default basic contact form you can edit.'
+        title: WEBDEVELOPMENT
+        text: 'Uw website is het centrum van uw digitale ecosysteem'
         label: 'Send a form'
         target_blank: false
         link_type: entry
@@ -52,9 +51,16 @@ page_builder:
         attr_title: null
         attr_aria: null
         show_controls: false
+        text-bulletpoint:
+          - 'Content management system'
+          - Wordpress
+          - Webshop
+          - 'Laravel Maatwerk'
       -
-        title: 'Long form content'
-        text: 'For long form content you can use the Article content block. This is a Bard fieldtypeopen in new window with multiple sets of fields that are regularly used in longer articles.'
+        title: Internetmarketing
+        text: |-
+          Online marketing:
+          Natuurlijk
         label: 'Read an article'
         target_blank: false
         link_type: entry
@@ -67,9 +73,16 @@ page_builder:
         attr_title: null
         attr_aria: null
         show_controls: false
+        text-bulletpoint:
+          - SEO
+          - SEA
+          - 'Social media marketing'
+          - 'Internet marketing'
       -
-        title: 'Way more features'
-        text: 'Professional SEO, social image generation, responsive assets, appearance globals, favicons generation, search templates, dark mode support with toggle, pagination template, search and additional bottles of oxygen.'
+        title: Service
+        text: |-
+          Creatieve oplossingen met
+          optimaal advies!
         label: 'Scavenge the docs'
         target_blank: true
         link_type: url
@@ -82,6 +95,11 @@ page_builder:
         attr_title: null
         attr_aria: null
         show_controls: false
+        text-bulletpoint:
+          - SLA
+          - Hosting
+          - Advies
+          - Helpdesk
     type: link_blocks
     enabled: true
     button-title: 'Ontdek onze werkwijze'

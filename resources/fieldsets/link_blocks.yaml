@@ -25,12 +25,13 @@ fields:
           handle: text
           field: common.text_plain
         -
-          handle: section_button
+          handle: text-bulletpoint
           field:
-            type: section
-            display: Button
-        -
-          import: button
+            display: List
+            type: list
+            icon: list
+            listable: hidden
+            instructions_position: above
       mode: stacked
       min_rows: 1
       add_row: 'Add link block'
@@ -40,3 +41,4 @@ fields:
       listable: hidden
       display: 'Link blocks'
       replicator_preview: false
+      instructions_position: above

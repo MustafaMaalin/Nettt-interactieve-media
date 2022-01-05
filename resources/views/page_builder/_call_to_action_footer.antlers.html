@@ -1,14 +1,15 @@
 {{#
-	@name call to action footer
-	@desc The call to action footer page builder block.
-    @set page.page_builder.call_to_action_footer
+@name call to action footer
+@desc The call to action footer page builder block.
+@set page.page_builder.call_to_action_footer
 #}}
 
 <!-- /page_builder/_call_to_action_footer.antlers.html -->
 <!-- Section 1 -->
 <section class="py-8 leading-7 text-gray-900 bg-pink sm:py-12 md:py-16 lg:py-24 rounded-3xl fluid-container">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
-        <div class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
+        <div
+            class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
             <div class="box-border flex-1 text-center border-solid sm:text-left">
                 <h2 class="m-0 text-3xl font-bold leading-tight tracking-tight text-left text-white border-0 border-gray-200 sm:text-3xl">
                     Wil je graag meer weten?
@@ -17,9 +18,11 @@
                     Laat je verrassen. Er is meer mogelijk dan je denkt.
                 </p>
             </div>
-            <a style="border-radius: 10px; padding: 1rem;" href="#_" class="inline-flex items-center justify-center w-full px-5 py-4 mt-6 ml-0 font-sans  font-bold leading-none text-greyblue no-underline bg-white border border-pink border-solid  cursor-pointer md:w-auto lg:mt-0  focus-within:bg-pink focus-within:border-white focus-within:text-white sm:text-lg lg:ml-6 md:text-xl">
+            <a style="border-radius: 10px; padding: 1rem;" href="#_"
+               class="inline-flex items-center justify-center w-full px-5 py-4 mt-6 ml-0 font-sans  font-bold leading-none text-greyblue no-underline bg-white border border-pink border-solid  cursor-pointer md:w-auto lg:mt-0  focus-within:bg-pink focus-within:border-white focus-within:text-white sm:text-lg lg:ml-6 md:text-xl">
                 Overtuigd? Neem contact op!
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
@@ -49,13 +52,14 @@
               flex
               items-center
               justify-center
+              font-sans
               text-4xl
               font-bold
               text-blue-700
               md:justify-start
             "
             >
-                Logo
+                {{ partial:components/logo width="200" }}
             </a>
             <p class="mt-2 font-sans text-sm text-justify text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -166,7 +170,8 @@
                         <a class="text-gray-600 hover:text-gray-800">Herkenbosch</a>
                     </li>
                     <li>
-                        <a style="border-radius: 10px; " href="#_" class=" inline-block text-left inline-flex items-center justify-center w-full px-5 py-2 mt-6 ml-0 font-sans  font-bold leading-none text-white no-underline bg-pink border    cursor-pointer md:w-auto lg:mt-0   sm:text-lg  md:text-xl">
+                        <a style="border-radius: 10px; " href="#_"
+                           class=" inline-block text-left inline-flex items-center justify-center w-full px-5 py-2 mt-6 ml-0 font-sans  font-bold leading-none text-white no-underline bg-pink border    cursor-pointer md:w-auto lg:mt-0   sm:text-lg  md:text-xl">
                             Helpdesk</a>
                     </li>
                 </ul>

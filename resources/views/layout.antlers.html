@@ -1,34 +1,41 @@
 {{#
-	@name Layout
-	@desc The default layout file.
+@name Layout
+@desc The default layout file.
 #}}
 
 <!-- /layout.antlers.html -->
 <!doctype html>
 <html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <link rel="stylesheet" href="{{ mix src='/css/site.css' }}">
-        <script src="{{ mix src='/js/site.js' }}" defer></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="{{ mix src='/css/site.css' }}">
+    <script src="{{ mix src='/js/site.js' }}" defer></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 
-        {{# Replace the following line with the SEO Pro or Aardvark SEO tag if you want to use an addon for SEO. Also remove the seo section in you page blueprint.#}}
-        {{ partial:snippets/seo }}
+    {{# Replace the following line with the SEO Pro or Aardvark SEO tag if you want to use an addon for SEO. Also remove the seo section in you page blueprint.#}}
+    {{ partial:snippets/seo }}
 
-        {{ partial:snippets/browser_appearance }}
-    </head>
-    <body class="flex flex-col min-h-screen bg-white selection:bg-primary selection:text-white">
-        {{ partial:snippets/noscript }}
-        {{ partial:navigation/skip_to_content }}
-        {{ partial:components/toolbar }}
+    {{ partial:snippets/browser_appearance }}
+</head>
+<body class="flex flex-col min-h-screen bg-white selection:bg-primary selection:text-white">
+{{ partial:snippets/noscript }}
+{{ partial:navigation/skip_to_content }}
+{{ partial:components/toolbar }}
 
-        {{# Remove the following line if you want to use an addon for SEO. #}}
-        {{ yield:seo_body }}
+{{# Remove the following line if you want to use an addon for SEO. #}}
+{{ yield:seo_body }}
 
-        {{ partial:layout/header }}
-        {{ template_content }}
-        {{ partial:layout/footer }}
-    </body>
+{{ partial:layout/header }}
+{{ template_content }}
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+</body>
 </html>
 <!-- End: /layout.antlers.html -->
