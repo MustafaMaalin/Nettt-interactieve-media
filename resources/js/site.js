@@ -10,10 +10,11 @@ var Slick = require("slick-carousel/slick/slick");
 $(document).ready(function(){
     $('.img-slider').slick({
         infinite: true,
-        slidesToShow: 5,
+        slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
+        arrows:false,
         responsive: [
             {
                 breakpoint: 1200,
@@ -21,21 +22,23 @@ $(document).ready(function(){
                     slidesToShow: 4,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true
+
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    arrows:false
                 }
             },
             {
                 breakpoint: 575,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows:false,
                 }
             }
         ]
@@ -43,7 +46,41 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+    $('.review-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows:false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
 
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
 
 
 // Global get CSRF token function (used by forms).

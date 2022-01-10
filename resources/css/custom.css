@@ -36,41 +36,7 @@
         aspect-ratio: 1 / 1;
     }
 
-    .overlay-container{
-        position: relative;
-    }
-    .image{
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    .overlay {
-        position: absolute;
-        /*top: 0;*/
-        bottom: 0;
-        left: 0;
-        right: 0;
-        /*height: 20%;*/
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-    }
-    .overlay-inner{
-        position: relative;
-        background: linear-gradient(355.36deg, rgba(0, 0, 0, 0.37) 33.8%, rgba(0, 0, 0, 0) 86.25%);
-    }
-    .text {
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .text-rol {
-        color: white;
-        font-size: 20px;
-    }
-    .overlay-container:hover .overlay {
-        opacity: 1;
-    }
+
 
     @media (min-width: 1280px){
         .background{
@@ -82,6 +48,7 @@
     .review {
         width:300px;
         text-align:center;
+        max-width: ;
         /*display:block;*/
         background-color: transparent;
         border: 1px solid transparent;
@@ -130,6 +97,29 @@
     /*    grid-column: 1/5;*/
     /*    grid-row: 5/7;*/
     /*}*/
+    .img-case{
+        object-fit: cover !important;
+        height: 300px;
+        width: 765px;
+    }
+    #content-grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows: minmax(100px, auto);
+        max-width: 1024px;
+        margin: 0 auto;
+
+        grid-template-areas:
+        "header header header header"
+        "aside aside aside aside"
+        "nav nav nav nav"
+        "main main main main"
+    ;
+        /*width: 765px;*/
+        height: auto;
+    }
+
+@media screen and (min-width: 1024px) {
 
     #content-grid{
         display: grid;
@@ -142,15 +132,41 @@
         "header header header header"
         "aside aside main main"
         "nav nav main main"
-        ;
+    ;
+        width: auto;
+        height: auto;
     }
     #content-grid > *{
-        /*background: #3bbced;*/
-        /*padding: 30px;*/
+        padding: 0px !important ;
+    }
+    .img-case{
+        height: 100%;
+        width: 100%;
+    }
+
+}
+    /*@media screen and (min-width: 640px) {*/
+    /*    #content-grid {*/
+    /*        display: grid;*/
+    /*        grid-template-columns: repeat(1, 1fr);*/
+    /*        grid-auto-rows: minmax(100px, auto);*/
+    /*        margin: 0 auto;*/
+    /*        grid-gap: 50px;*/
+    /*        grid-template-areas:*/
+    /*    "header"*/
+    /*    "aside"*/
+    /*    "main"*/
+    /*    "nav";*/
+    /*    }*/
+    /*}*/
+
+    #content-grid > *{
+        padding: 30px;
     }
     .header{
         grid-area: header;
     }
+
     .main{
         grid-area: main;
     }
@@ -160,6 +176,76 @@
     .nav{
         grid-area: nav;
     }
+/*.slider-container{*/
+/*    max-width: 100vw;*/
+/*    width: 100%;*/
+/*    overflow: hidden;*/
+/*}*/
+
+    .overlay-container-cases{
+        position: relative;
+    }
+    .overlay-cases {
+        position: absolute;
+        /*top: 0;*/
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /*height: 20%;*/
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+    }
+    .overlay-inner-case{
+        position: relative;
+        background: linear-gradient(355.36deg, rgba(0, 0, 0, 0.37) 33.8%, rgba(0, 0, 0, 0) 86.25%);
+    }
+    .overlay-container-cases:hover .overlay {
+        opacity: 1;
+    }
+
+    /*teams*/
+    .overlay-container{
+        position: relative;
+    }
+    .image{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .overlay {
+        position: absolute;
+        /*top: 0;*/
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /*height: 20%;*/
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+    }
+    .overlay-inner{
+        position: relative;
+        background: linear-gradient(355.36deg, rgba(0, 0, 0, 0.37) 33.8%, rgba(0, 0, 0, 0) 86.25%);
+    }
+    .text {
+        color: white;
+        font-weight: bold;
+    }
+    .text-rol {
+        color: white;
+        font-size: 20px;
+    }
+    .overlay-container:hover .overlay {
+        opacity: 1;
+    }
+
+    .width-review{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
 }
+
 
 

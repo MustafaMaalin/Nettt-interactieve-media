@@ -17,7 +17,7 @@
             >
                 <a
                     class="
-                        p-1 -m-1 flex items-center font-bold text-xs uppercase tracking-wide hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary
+                        p-1 -m-1 flex items-center text-greyblue   hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary
                         {{ is_current || is_parent
                             ? 'text-primary'
                             : 'text-neutral' }}
@@ -71,7 +71,11 @@
             </li>
         {{ /nav:main }}
         <li>
-            <a href="{{link}}" class="inline-flex items-center justify-center px-5 py-3 font-bold text-white border border-transparent  bg-pink rounded-lg">0475-35 89 05</a>
+            <a href="{{link}}" class="inline-flex items-center justify-center px-5 py-3  font-sans text-white border border-transparent  bg-pink rounded-lg">
+                <svg class="mr-3" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.8104 20.5726L21.6431 17.9295C21.3797 17.8172 21.0868 17.7935 20.8088 17.8621C20.5307 17.9306 20.2824 18.0876 20.1013 18.3094L17.3701 21.6464C13.0837 19.6254 9.63411 16.1758 7.61312 11.8894L10.9501 9.15816C11.1723 8.97737 11.3297 8.72908 11.3982 8.45088C11.4668 8.17268 11.4428 7.87972 11.33 7.61635L8.68688 1.44907C8.56305 1.16516 8.34403 0.933354 8.06759 0.793628C7.79116 0.653903 7.47463 0.615013 7.1726 0.683664L1.44584 2.00522C1.15464 2.07247 0.894829 2.23643 0.708814 2.47035C0.522799 2.70427 0.421564 2.99433 0.421631 3.29319C0.421631 17.4174 11.8696 28.8433 25.9718 28.8433C26.2707 28.8435 26.5609 28.7424 26.795 28.5563C27.029 28.3703 27.193 28.1104 27.2603 27.8191L28.5819 22.0924C28.6501 21.7889 28.6103 21.4711 28.4695 21.1937C28.3287 20.9163 28.0957 20.6967 27.8104 20.5726Z" fill="white"/>
+                </svg>
+                0475-35 89 05</a>
         </li>
     </ul>
 </nav>

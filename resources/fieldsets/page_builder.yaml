@@ -23,7 +23,7 @@ fields:
             -
               import: background_image
         call_to_action:
-          display: Call to action
+          display: 'Call to action'
           instructions: 'Show a call to action.'
           fields:
             -
@@ -46,6 +46,12 @@ fields:
           fields:
             -
               import: collection
+        cta_pink:
+          display: cta-pink
+          instructions: 'volledig roze call-to-action voor de homepage'
+          fields:
+            -
+              import: cta_pink
         form:
           display: Form
           instructions: 'Show a form.'
@@ -59,18 +65,23 @@ fields:
             -
               import: imgtekst_center
         link_blocks:
-          display: Link blocks
+          display: 'Link blocks'
           instructions: 'Show link blocks.'
           fields:
             -
               import: link_blocks
-
         over_ons_block:
           display: 'Over Ons block'
           instructions: 'Je kunt hier een afbeelding en text plaatsen die op de website over elkaar liggen'
           fields:
             -
               import: over_ons_block
+        over_onscontactpagina:
+          display: 'Over ons(contactpagina)'
+          instructions: 'Deze block is bestemd voor de contactpagina op de website! (voor adresgegevens)'
+          fields:
+            -
+              import: over_onscontactpagina
         reviews:
           display: reviews
           instructions: klantenreviews
@@ -101,4 +112,15 @@ fields:
           fields:
             -
               import: tools
-
+        video_background:
+          display: video-background
+          instructions: 'include deze component voor een automatische video background'
+          fields:
+            -
+              import: video_background
+        werkwijze_nettt_interactieve_media:
+          display: 'werkwijze nettt Interactieve media'
+          instructions: 'Werkwijze blok waarin je een svg/tekst en titel kan toevoegen'
+          fields:
+            -
+              import: werkwijze_nettt_interactieve_media

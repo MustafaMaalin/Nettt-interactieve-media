@@ -6,26 +6,26 @@
 
 <!-- /page_builder/_call_to_action_footer.antlers.html -->
 <!-- Section 1 -->
-<section class="py-8 leading-7 text-gray-900 bg-pink sm:py-12 md:py-16 lg:py-24 rounded-3xl fluid-container">
-    <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
+<section class="py-8 mt-8 leading-7 text-gray-900 bg-pink sm:py-12 md:py-16 lg:py-24 md:rounded-3xl fluid-container">
+    <div class="max-w-6xl md:px-4 md:px-10 mx-auto border-solid lg:px-12">
         <div
             class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
             <div class="box-border flex-1 text-center border-solid sm:text-left">
-                <h2 class="m-0 text-3xl font-bold leading-tight tracking-tight text-left text-white border-0 border-gray-200 sm:text-3xl">
+                <h2 class="m-0 text-3xl font-bold leading-tight tracking-tight md:text-left text-white border-0 border-gray-200 sm:text-3xl">
                     Wil je graag meer weten?
                 </h2>
-                <p class="mt-2 text-xl text-left text-white border-0 border-gray-200 sm:text-2xl">
+                <p class="mt-2 text-xl md:text-left text-white border-0 border-gray-200 sm:text-2xl">
                     Laat je verrassen. Er is meer mogelijk dan je denkt.
                 </p>
             </div>
             <a style="border-radius: 10px; padding: 1rem;" href="#_"
                class="inline-flex items-center justify-center w-full px-5 py-4 mt-6 ml-0 font-sans  font-bold leading-none text-greyblue no-underline bg-white border border-pink border-solid  cursor-pointer md:w-auto lg:mt-0  focus-within:bg-pink focus-within:border-white focus-within:text-white sm:text-lg lg:ml-6 md:text-xl">
                 Overtuigd? Neem contact op!
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
+<!--                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none"-->
+<!--                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">-->
+<!--                    <line x1="5" y1="12" x2="19" y2="12"></line>-->
+<!--                    <polyline points="12 5 19 12 12 19"></polyline>-->
+<!--                </svg>-->
             </a>
         </div>
     </div>
@@ -57,44 +57,43 @@
               font-bold
               text-blue-700
               md:justify-start
+              sm:ml-2
             "
             >
                 {{ partial:components/logo width="200" }}
             </a>
-            <p class="mt-2 font-sans text-sm text-justify text-gray-500">
+            <p class="mt-2 font-sans  text-justify text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-                at sequi cum, impedit fuga in placeat illo eum minima possimus est
-                perferendis distinctio explicabo eos natus consequuntur blanditiis
-                odio optio?
+                at sequi cum.
             </p>
 
 
         </div>
         <div class="justify-between w-full mt-4 text-center lg:flex">
             <div class="w-full px-4 lg:w-1/3 md:w-1/2">
-                <h2 class="mb-2 lg:pl-6 font-bold tracking-widest text-pink">
+                <h2 class="mb-2 font-bold font-sans sm:mt-5  text-pink">
                     Navigatie
                 </h2>
-                <ul class=" inline-block lg:text-left mb-8 space-y-2 text-sm list-none">
+                <ul class=" inline-block lg:text-left font-sans mb-8 space-y-2  list-none">
                     <li>
-                        <a class="text-greyblue hover:text-gray-800">Home</a>
+                        <a class="text-greyblue hover:text-pink">Home</a>
                     </li>
                     <li>
-                        <a class="text-greyblue hover:text-gray-800">About Us</a>
+                        <a class="text-greyblue hover:text-pink">About Us</a>
                     </li>
                     <li>
-                        <a class="text-greyblue hover:text-gray-800">Blogs</a>
+                        <a class="text-greyblue hover:text-pink">Blogs</a>
                     </li>
                     <li>
-                        <a class="text-greyblue hover:text-gray-800">Contact Us</a>
+                        <a class="text-greyblue hover:text-pink">Contact Us</a>
                     </li>
                 </ul>
             </div>
             <div class="w-full px-4 lg:w-1/3 md:w-1/2">
-                <h2 class="mb-2 font-bold tracking-widest lg:pr-2 text-pink">
+                <h2 class="mb-2 font-bold font-sans sm:mt-5 lg:pr-7  text-pink">
                     Let's chat
                 </h2>
-                <ul class="inline-block  lg:text-left space-y-2 text-sm list-none">
+                <ul class="inline-block  lg:text-left space-y-2  list-none">
                     <li>
                         <a class="text-greyblue hover:text-gray-800">0475- 35 89 05</a>
                     </li>
@@ -156,30 +155,33 @@
                 </ul>
             </div>
             <div class="w-full px-4 lg:w-1/3 md:w-1/2">
-                <h2 class="mb-2 font-bold tracking-widest lg:pr-6 text-pink">
-                    Useful Links
+                <h2 class="mb-2 sm:mt-5 font-bold   whitespace-nowrap  xl:pl-7 text-pink">
+                    Nettt Interactieve Media
                 </h2>
-                <ul class=" inline-block lg:text-left mb-8 space-y-2 text-sm list-none">
+                <ul class=" inline-block lg:text-left mb-8 space-y-2  list-none">
                     <li>
-                        <a class="text-gray-600 hover:text-gray-800">Stationsweg 84</a>
+                        <a class="text-gray-600 hover:text-pink">Stationsweg 84</a>
                     </li>
                     <li>
-                        <a class="text-gray-600 hover:text-gray-800">6075 CD</a>
+                        <a class="text-gray-600 hover:text-pink">6075 CD</a>
                     </li>
                     <li>
-                        <a class="text-gray-600 hover:text-gray-800">Herkenbosch</a>
+                        <a class="text-gray-600 hover:text-pink">Herkenbosch</a>
                     </li>
                     <li>
                         <a style="border-radius: 10px; " href="#_"
-                           class=" inline-block text-left inline-flex items-center justify-center w-full px-5 py-2 mt-6 ml-0 font-sans  font-bold leading-none text-white no-underline bg-pink border    cursor-pointer md:w-auto lg:mt-0   sm:text-lg  md:text-xl">
-                            Helpdesk</a>
+                           class=" inline-block text-left inline-flex text-sm items-center justify-center w-full px-5 py-2 mt-6 ml-0 font-sans  font-bold leading-none text-white no-underline bg-pink border    cursor-pointer md:w-auto lg:mt-0   sm:text-lg  md:text-xl">
+                            Helpdesk <svg class="ml-5" width="17" height="25" viewBox="0 0 17 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.81299 2.02441L13.813 13.3321L1.81299 23.0244" stroke="#E3E3E3" stroke-width="4"/>
+                        </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="flex justify-center -mt-12">
-        <p class="text-base text-gray-400">
+        <p class="text-sm text-gray-400">
             @Nettt Interactieve Media 2021 Voorwaarden & Privacy
         </p>
     </div>

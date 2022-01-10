@@ -3,13 +3,16 @@ id: home
 blueprint: page
 title: Home
 updated_by: 4034dfd0-3ed5-441d-b871-2e4dc23329a4
-updated_at: 1641369447
+updated_at: 1641545810
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 page_builder:
+  -
+    type: video_background
+    enabled: true
   -
     img:
       - background-images/background-vector-1641208297.svg
@@ -31,6 +34,7 @@ page_builder:
       - merken/wordpress.png
       - merken/computel.png
       - merken/image-10.png
+      - phpstorm.png
     type: tools
     enabled: true
   -
@@ -120,14 +124,14 @@ page_builder:
   -
     label: '#webdev #statamic #uex'
     title: 'House of U'
-    case_image: 2019_02_27_HOUSEOFU_CAMPAGNE_53975-1614264690-1.jpg
+    case_image: 2019_02_27_HOUSEOFU_CAMPAGNE_53975-1614264690-1.png
     type: cases
     enabled: true
     case-img-standing: boats2-1641293349.jpg
     img_small:
-      - house.jpg
+      - DSC7379-2-1980x1000-2-1641382481.jpg
     img_container2:
-      - house.jpg
+      - DSC7379-2-1980x1000-2-1641382481.jpg
   -
     button-title: 'Meer cases'
     link: 'entry::1c3868b5-d321-4ff2-a603-a2c0e78c2c0b'
@@ -153,12 +157,14 @@ page_builder:
       -
         klant-foto:
           - klantbeoordeling-foto/John.jpg
-        klant-naam: John
+        klant-naam: 'John Doe'
         klant-review: 'Nettt heeft me geholpen met een spectaculaire website!'
     background-img:
       - background-images/background-big-pink.svg
     type: reviews
     enabled: true
+    title: 'Wat zeggen onze klanten?'
+    title-center: 'Wat zeggen onze klanten?'
   -
     img:
       - nettt-locatie.jpg

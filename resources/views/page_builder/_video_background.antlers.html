@@ -1,0 +1,33 @@
+{{#
+@name video-background
+@desc The video-background page builder block.
+@set page.page_builder.video_background
+#}}
+
+<!-- /page_builder/_video_background.antlers.html -->
+<header class="relative flex items-center justify-center h-screen  overflow-hidden">
+    <div style="z-index: 1;" class="p-40">
+    <h1 class="text-4xl underline font-bold text-white tracking-tight">Dit is Nettt Interactieve Media</h1>
+        <br>
+    <p style="line-height: 3.5rem" class="mt-2 xl:text-4xl 2xl:text-5xl lg:pr-32 font-bold text-white">Van websites en webshops tot verschillende marketingcampagnes, wij zijn jouw digitale partner!
+        </p>
+        <br>
+        <br>
+        <div class=" mx-auto text-left max-w-7xl">
+            <a href="{{link}}" class="inline-flex items-center px-5 py-3 font-bold text-white border border-transparent  bg-pink rounded-lg">Let's get started!</a>
+        </div>
+    </div>
+    <video
+        autoplay
+        loop
+        muted
+        class="absolute z-0 w-auto min-w-full min-h-full max-w-none"
+    >
+        <source
+            src="http://nettt.test/assets/background-video/pexels-mart-production-7565453.mp4"
+            type="video/mp4"
+        />
+        Your browser does not support the video tag.
+    </video>
+</header>
+<!-- End: /page_builder/_video_background.antlers.html -->

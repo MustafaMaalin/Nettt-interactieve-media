@@ -1,0 +1,40 @@
+{{#
+	@name Over ons(contactpagina)
+	@desc The Over ons(contactpagina) page builder block.
+    @set page.page_builder.over_onscontactpagina
+#}}
+
+<!-- /page_builder/_over_onscontactpagina.antlers.html -->
+<section class=" fluid-container text-center mb-10 ">
+    {{block:over_ons_block}}
+    <div class="inline-block text-left mt-7 mb-10">
+        <div class="flex lg:flex-row flex-col ">
+            {{glide:image}}
+            <img class="w-full h-auto max-w-screen-md" src="{{url}}" >
+            {{/glide:image}}
+
+            <a href="{{url}}" class=" box-border text-white bg-greyblue  w-full h-auto lg:max-w-screen-sm  lg:translate-y-20 lg:-translate-x-20 py-5 ">
+                <div class="ml-8 mt-6" >
+                    <h2 class=" font-bold text-2xl md:text-3xl font-sans  leading-tight text-white py-4 px-8  ">{{title}}</h2>
+                    <h2 class="  text-2xl md:text-3xl font-sans leading-tight text-white  py-4 pl-8 pr-28 ">{{textarea}}</h2>
+                    <h2 class="flex flex-row text-2xl  md:text-3xl md:text-3xl font-sans leading-tight text-white  py-4 px-8">
+                        <svg class="mr-5" width="44" height="43" viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38.9664 0H4.67597C3.43583 0 2.24647 0.481956 1.36956 1.33984C0.492645 2.19773 0 3.36127 0 4.57451L0 38.1209C0 39.3341 0.492645 40.4977 1.36956 41.3556C2.24647 42.2135 3.43583 42.6954 4.67597 42.6954H38.9664C40.2066 42.6954 41.3959 42.2135 42.2728 41.3556C43.1497 40.4977 43.6424 39.3341 43.6424 38.1209V4.57451C43.6424 3.36127 43.1497 2.19773 42.2728 1.33984C41.3959 0.481956 40.2066 0 38.9664 0ZM37.3698 29.2931L35.9085 35.4877C35.8343 35.8026 35.6532 36.0837 35.3947 36.285C35.1362 36.4863 34.8156 36.5959 34.4853 36.5961C18.8987 36.5961 6.23463 24.2344 6.23463 8.95841C6.24622 8.63825 6.36255 8.33018 6.5665 8.07953C6.77045 7.82888 7.05124 7.64889 7.36757 7.56605L13.6996 6.13651C13.8076 6.11417 13.9175 6.10172 14.0279 6.09934C14.3105 6.1133 14.5841 6.20099 14.8203 6.35333C15.0565 6.50567 15.2468 6.71709 15.3713 6.96564L18.2938 13.6368C18.3653 13.8167 18.4052 14.0071 18.4116 14.2C18.3878 14.6232 18.1955 15.0204 17.8758 15.3065L14.1847 18.2609C16.4212 22.8982 20.2363 26.6305 24.9765 28.8184L27.9964 25.2074C28.2888 24.8947 28.6948 24.7066 29.1274 24.6833C29.3246 24.6895 29.5193 24.7285 29.7031 24.7986L36.5222 27.6577C36.7764 27.7793 36.9927 27.9654 37.1484 28.1965C37.3041 28.4276 37.3937 28.6954 37.4078 28.9719C37.4058 29.0799 37.3931 29.1875 37.3698 29.2931Z" fill="white"/>
+                        </svg>
+                        {{number}}
+                    </h2>
+                    <h2 class=" flex flex-row  text-2xl  md:text-3xl md:text-3xl font-sans leading-tight text-white  py-4 px-8">
+                        <svg class="mr-5" width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M39.927 1.04287L1.04768 22.9795C-0.470582 23.8326 -0.277654 25.9 1.23222 26.5234L10.1489 30.1823L34.2482 9.4106C34.7095 9.00862 35.3638 9.6239 34.9696 10.0915L14.7624 34.1693V40.7732C14.7624 42.7093 17.153 43.4722 18.3274 42.0694L23.6539 35.7279L34.1056 40.0103C35.2967 40.5025 36.6556 39.7724 36.8737 38.5172L42.9132 3.07738C43.1984 1.42024 41.3782 0.222504 39.927 1.04287Z" fill="white"/>
+                        </svg>
+                        {{mail}}
+                    </h2>
+                </div>
+            </a>
+        </div>
+    </div>
+    {{block:over_ons_block}}
+</section>
+<br>
+<br>
+<!-- End: /page_builder/_over_onscontactpagina.antlers.html -->

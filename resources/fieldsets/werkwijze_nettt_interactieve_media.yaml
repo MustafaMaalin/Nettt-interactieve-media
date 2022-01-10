@@ -1,0 +1,77 @@
+title: 'werkwijze nettt Interactieve media'
+fields:
+  -
+    handle: grid
+    field:
+      fields:
+        -
+          handle: icon
+          field:
+            mode: list
+            container: assets
+            restrict: false
+            allow_uploads: true
+            show_filename: true
+            display: Icon
+            type: assets
+            icon: assets
+            listable: hidden
+            instructions_position: above
+        -
+          handle: titel
+          field:
+            input_type: text
+            antlers: false
+            display: titel
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+        -
+          handle: textarea
+          field:
+            antlers: false
+            display: Textarea
+            type: textarea
+            icon: textarea
+            listable: hidden
+            instructions_position: above
+        -
+          handle: icon2
+          field:
+            mode: list
+            container: assets
+            restrict: false
+            allow_uploads: true
+            show_filename: true
+            display: 'Icon onder'
+            type: assets
+            icon: assets
+            listable: hidden
+            instructions_position: above
+        -
+          handle: title2
+          field:
+            input_type: text
+            antlers: false
+            display: title
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+        -
+          handle: textarea2
+          field:
+            antlers: false
+            display: Textarea
+            type: textarea
+            icon: textarea
+            listable: hidden
+            instructions_position: above
+      mode: table
+      reorderable: true
+      display: Grid
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above

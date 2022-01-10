@@ -1,0 +1,54 @@
+title: 'Over ons(contactpagina)'
+fields:
+  -
+    handle: image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: 'Over ons Foto'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Over ons titel'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: textarea
+    field:
+      antlers: false
+      display: 'Over ons text'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+  -
+    handle: number
+    field:
+      input_type: text
+      antlers: false
+      display: Telefoonnummer
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: mail
+    field:
+      input_type: text
+      antlers: false
+      display: E-mail
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above

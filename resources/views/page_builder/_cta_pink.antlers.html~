@@ -1,0 +1,15 @@
+{{#
+	@name cta-pink
+	@desc The cta-pink page builder block.
+    @set page.page_builder.cta_pink
+#}}
+
+<!-- /page_builder/_cta_pink.antlers.html -->
+<section class="py-6 bg-white">
+    {{block:cta-pink}}
+    <div class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
+        <a href="{{link}}" class="inline-flex items-center justify-center px-5 py-3 font-bold text-white border border-transparent  bg-pink rounded-lg">{{button-title}}</a>
+    </div>
+    {{block:/cta-pink}}
+</section>
+<!-- End: /page_builder/_cta_pink.antlers.html -->

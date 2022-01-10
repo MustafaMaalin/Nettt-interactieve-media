@@ -4,43 +4,41 @@
     @set page.page_builder.cases
     #}}
 
+
     <!-- /page_builder/_cases.antlers.html -->
     {{block:cases}}
     <section>
-            <div id="content-grid">
-                {{case_image}}
-            <div class="header bg-cover h-72"
-                style="background-image: url({{url}})">
-                {{/case_image}}
-                <a class="overlay-container md:h-96 ">
-                    <div class="overlay">
-                        <div class="overlay-inner p-4">
+            <div id="content-grid" class="">
+            <div class="header">
+                <a class="overlay-container-cases  ">
+                    {{glide:case_image}}
+                    <img class="img-case" src="{{url}}">
+                    {{/glide:case_image}}
+                    <div class="overlay-cases">
+                        <div class="overlay-inner-case ">
                             <div class="text">{{title}}</div>
                             <div class="text-rol">{{label}}</div>
                         </div>
                     </div>
                 </a>
             </div>
-                {{case-img-standing}}
-            <div class="main bg-cover h-auto"
-                 style="background-image: url({{url}})">
-                {{/case-img-standing}}
+                {{glide:case-img-standing}}
+            <div class="main"/>
+                <img class="img-case " src="{{url}}">
+                {{/glide:case-img-standing}}
             </div>
-                {{img_small}}
-            <div class="aside bg-cover h-72"
-                 style="background-image: url({{url}})">
-                {{/img_small}}
+                {{glide:img_small}}
+            <div class="aside">
+                <img class="img-case h-full" src="{{url}}">
+                {{/glide:img_small}}
             </div>
-                {{img_container2}}
-            <div class="nav bg-cover h-72"
-                 style="background-image: url({{url}})">
-                {{/img_container2}}
+                {{glide:img_container2}}
+            <div class="nav">
+                <img class="img-case h-full" src="{{url}}">
+                {{/glide:img_container2}}
             </div>
 
             </div>
-        <br>
-        <br>
-        <br>
         <br>
         {{block:cases}}
     </section>
