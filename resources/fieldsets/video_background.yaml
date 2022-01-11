@@ -1,2 +1,10 @@
 title: video-background
-fields: {  }
+fields:
+  -
+    handle: link
+    field:
+      display: 'video link( moet eindigen met .mp4)'
+      type: link
+      icon: link
+      listable: hidden
+      instructions_position: above

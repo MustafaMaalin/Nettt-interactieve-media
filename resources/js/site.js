@@ -4,7 +4,7 @@ import persist from '@alpinejs/persist'
 import trap from '@alpinejs/trap'
 import 'focus-visible'
 var Jquery = require('jquery');
-var Slick = require("slick-carousel/slick/slick");
+var Slick = require("slick-slider");
 
 
 $(document).ready(function(){

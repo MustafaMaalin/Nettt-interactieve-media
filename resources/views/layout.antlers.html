@@ -24,17 +24,18 @@
 <body class="flex flex-col min-h-screen bg-white selection:bg-primary selection:text-white">
 {{ partial:snippets/noscript }}
 {{ partial:navigation/skip_to_content }}
-{{ partial:components/toolbar }}
+{{# partial:components/toolbar #}}
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 {{# Remove the following line if you want to use an addon for SEO. #}}
 {{ yield:seo_body }}
 
 {{ partial:layout/header }}
 {{ template_content }}
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
 
 </body>
 </html>

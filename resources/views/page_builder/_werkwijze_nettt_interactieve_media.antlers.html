@@ -10,11 +10,23 @@
     {{grid}}
     <div class="fluid-container">
     {{icon}}
+        <div class="relative">
     <img src="{{url}}">
     {{/icon}}
+        <div class="position">
+        <h1 class=" text-3xl lg:text-4xl  xl:text-5xl font-bold text-pink tracking-tight mb-2">{{titel}}</h1>
+        <p class=" lg:mb-5 lg:mt-5 lg:pr-10 text-sm lg:text-base xl:text-lg text-greyblue">{{textarea}}</p>
+        </div>
+        </div>
+        <div class="relative">
         {{icon2}}
-        <img class="pl-20" src="{{url}}">
+        <img class=" lg:pl-18 xl:pl-20" src="{{url}}">
         {{/icon2}}
+            <div class="position-left">
+                <h1 class=" text-3xl lg:text-4xl  xl:text-5xl font-bold text-pink tracking-tight mb-2">{{title2}}</h1>
+                <p class=" lg:mb-5 lg:mt-5 lg:pr-10 text-sm lg:text-base xl:text-lg text-greyblue">{{textarea2}}</p>
+            </div>
+        </div>
     </div>
     {{/grid}}
     {{block:werkwijze_nettt_interactieve_media}}

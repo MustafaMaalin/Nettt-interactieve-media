@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 4034dfd0-3ed5-441d-b871-2e4dc23329a4
-updated_at: 1641545810
+updated_at: 1641822802
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -13,6 +13,7 @@ page_builder:
   -
     type: video_background
     enabled: true
+    link: 'http://nettt.test/assets/background-video/pexels-mart-production-7565453.webm'
   -
     img:
       - background-images/background-vector-1641208297.svg
